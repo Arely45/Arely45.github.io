@@ -54,3 +54,4 @@ Estudio de los factores que influyen en el éxito comercial de los videojuegos, 
 * Email: areeh.mendez@gmail.com
 
 ---
+
