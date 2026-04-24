@@ -2,7 +2,7 @@
 
 ## 👩‍💻 Sobre mí
 
-Soy estadistica y cientifico de datos en formación con experiencia en análisis estadístico y visualización de datos. Actualmente me enfoco en desarrollar proyectos prácticos que resuelvan problemas reales mediante el uso de Python y herramientas de análisis.
+Soy estadística y data scientist en formación con experiencia en análisis estadístico y visualización de datos. Actualmente me enfoco en desarrollar proyectos prácticos que resuelvan problemas reales mediante el uso de Python y herramientas de análisis.
 
 ## 🛠️ Habilidades
 
@@ -10,6 +10,7 @@ Soy estadistica y cientifico de datos en formación con experiencia en análisis
 * Visualización de datos
 * Estadística básica e inferencial
 * Python (Pandas, Plotly, Streamlit)
+* SQL, ML
 * Limpieza y transformación de datos
 
 ## 🚀 Proyectos destacados
