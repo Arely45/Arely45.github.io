@@ -1,125 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 
-</html>
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arely Méndez Hernández</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Arely Méndez | Data Scientist</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: #222;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: black;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #222;
+            color: white;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Arely Méndez</h1>
+        <p>Estadística | Data Scientist Jr | Python • SQL • Análisis de Datos</p>
+        <p>Portafolio de proyectos enfocados en análisis de datos reales y generación de insights</p>
     </header>
 
-    <!-- Sobre mi -->
-    <section id="about">
-        <h1>Hola, soy Arely Méndez Hernández</h1>
-        <p>Estadística y Data Scientist. Trabajo con Python para convertir datos en insights accionables.</p>
-    </section>
+    <div class="container">
 
-    <!-- PROYECTOS -->
-    <section id="projects">
-        <h2>Proyectos Destacados</h2>
+        <!-- PROYECTO 1 -->
+        <a class="card"
+            href="https://github.com/Arely45/Data-Scientist-Portfolio/blob/main/video-game-sales-and-market-analysis.ipynb"
+            target="_blank">
+            <img src="img/videojuegos.jpg" alt="Videojuegos">
+            <div class="card-content">
+                <h3>🎮 Análisis de Videojuegos</h3>
+                <p>Factores que impulsan el éxito comercial en el mercado global.</p>
+            </div>
+        </a>
 
-        <div class="project">
-            <h3>Proyecto 1</h3>
-            <p>
-                Título:
-                Patrones de movilidad urbana y factores que afectan la duración de viajes
+        <!-- PROYECTO 2 -->
+        <a class="card" href="AQUI_VA_TU_LINK_TELECOM" target="_blank">
+            <img src="img/telecom.jpg" alt="Telecom">
+            <div class="card-content">
+                <h3>📱 Análisis de Ingresos Telecom</h3>
+                <p>Evaluación de rentabilidad y comportamiento de usuarios.</p>
+            </div>
+        </a>
 
-                Problema:
-                Entender cómo factores externos, como la ubicación y el clima, influyen en la duración de los viajes
-                para identificar oportunidades de optimización en servicios de transporte.
-                Qué hice:
-                Realicé un análisis exploratorio de datos utilizando Python (Pandas) para evaluar la distribución de
-                viajes por zonas y compañías. Analicé el impacto de condiciones climáticas en la duración de los viajes
-                y apliqué pruebas estadísticas (Levene y t-test) para validar diferencias significativas.
-                Resultado o aprendizaje:
-                Identifiqué una concentración de viajes en zonas de alta actividad económica y comprobé que las
-                condiciones de lluvia afectan significativamente la duración de los viajes. Estos hallazgos permiten
-                anticipar variaciones en la demanda y optimizar la asignación de recursos.
-                Stack:
-                Python (Pandas), EDA, Análisis estadístico, Pruebas de hipótesis, Visualización de datos
-            </p>
-        </div>
+        <!-- PROYECTO 3 -->
+        <a class="card" href="AQUI_VA_TU_LINK_MOVILIDAD" target="_blank">
+            <img src="img/movilidad.jpg" alt="Movilidad">
+            <div class="card-content">
+                <h3>🚗 Movilidad Urbana</h3>
+                <p>Impacto del clima y ubicación en la duración de viajes.</p>
+            </div>
+        </a>
 
-        <div class="project">
-            <h3>Proyecto 2</h3>
-            <p>
-                Título:
-                Análisis de ingresos en planes de telecomunicaciones: comportamiento y rentabilidad
+    </div>
 
-                Problema:
-                Determinar qué plan de telecomunicaciones genera mayores ingresos y entender los factores que influyen
-                en la rentabilidad.
-                Qué hice:
-                Analicé datos de consumo (llamadas, mensajes y datos móviles) y facturación de usuarios mediante Python
-                (Pandas). Realicé análisis exploratorio de datos y apliqué pruebas de hipótesis para evaluar diferencias
-                en ingresos entre planes.
-                Resultado o aprendizaje:
-                Identifiqué diferencias significativas en ingresos entre planes y encontré que los cargos por excedentes
-                influyen directamente en la rentabilidad. Esto permite optimizar estrategias de precios y segmentación
-                de clientes.
-                Stack:
-                Python (Pandas), EDA, Análisis estadístico, Pruebas de hipótesis
-            </p>
-        </div>
-        <div class="project">
-            <h3>Proyecto 3</h3>
-            <p>
-                Título:
-                Análisis del mercado global de videojuegos: factores que impulsan el éxito comercial
-
-                Problema:
-                Identificar qué variables (plataforma, género, región y calificaciones) influyen en el desempeño
-                comercial de los videojuegos, para entender qué factores aumentan la probabilidad de éxito en el
-                mercado.
-                Qué hice:
-                Realicé un análisis exploratorio de datos (EDA) utilizando Python (Pandas) para limpiar, transformar y
-                analizar información de ventas de videojuegos a nivel global. Evalué patrones por plataforma, género y
-                región, y apliqué pruebas de hipótesis para validar diferencias significativas en calificaciones y su
-                relación con el rendimiento comercial.
-                Resultado o aprendizaje:
-                Identifiqué ciclos de vida de plataformas (8–10 años) y diferencias claras en preferencias regionales.
-                Encontré que las calificaciones profesionales tienen mayor influencia en el desempeño comercial que las
-                de usuarios. Estos hallazgos permiten orientar estrategias de lanzamiento, selección de plataformas y
-                segmentación de mercado.
-                Stack:
-                Python (Pandas), Análisis Exploratorio de Datos (EDA), Limpieza de datos, Análisis estadístico, Pruebas
-                de hipótesis, Visualización de datos
-            </p>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Python (Pandas, NumPy)</li>
-            <li>SQL</li>
-            <li>Excel</li>
-            <li>Visualización (Matplotlib, Seaborn)</li>
-            <li>Estadística</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Email: areeh.mendez@gmail.com</p>
-        <p>LinkedIn: <a
-                href="https://www.linkedin.com/in/arely-m%C3%A9ndez-data-scientist/">https://www.linkedin.com/in/arely-méndez-data-scientist/</a>
+    <footer>
+        <p>📩 Contacto: tuemail@email.com</p>
+        <p>
+            <a href="https://github.com/Arely45" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/arely-m%C3%A9ndez-data-scientist/" target="_blank">LinkedIn</a>
         </p>
-    </section>
+    </footer>
+
 </body>
 
 </html>
